@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let numbers = [20,30,41,51,60];
+        let even = numbers.filter(num => num % 2 == 0)
+        console.log(even);
+
+        let products = [
+            {p_name:"Cokacola", price: 2000},
+            {p_name:"Banana", price:3000},
+            {p_name:"mango", price:500}
+        ]
+
+        let result = products.filter(item => item.price < 600)
+        console.log(result);
+        
+
+        
+    </script>
+</body>
+</html>

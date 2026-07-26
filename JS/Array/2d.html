@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+    <table class="border-1">
+        <thead class="table table-content bg-secondary fs-4 fw-bold">
+            <tr>
+                <td>Id</td>
+                <td>Name</td>
+                <td>Qty</td>
+                <td>Price</td>
+                <td>Action</td>
+            </tr>
+        </thead>
+        <tbody class=" " id="display">
+        </tbody>
+        <script>
+            let display = document.getElementById('display')
+            let nested = [
+                [100, "Product 1", 100, 1200.55],
+                [101, "Product 2", 101, 1300.55],
+                [102, "Product 3", 102, 1400.55],
+                [103, "Product 4", 103, 2300.55],
+                [104, "Product 5", 104, 2000.55]
+            ]
+
+            console.log(nested[2],[1]);
+            console.log(nested);
+
+            for(let row of nested){
+                let text = `
+                <tr>
+                    <td>${row[0]}</td>
+                    <td>${row[1]}</td>
+                    <td>${row[2]}</td>
+                    <td>${row[3]}</td>
+                    <td>
+                        <button>edit</button>
+                        <button>delete</button>
+                    </td>
+                <tr>
+                `;
+                display.innerHTML += text  
+                
+            }
+
+        </script>
+
+    </table>
+</body>
+</html>

@@ -1,0 +1,28 @@
+.box{
+   width: 200px;
+   height: 200px;
+   background-color:gray;
+   animation: move 5s ease-in-out initial;
+   position: absolute;
+   padding: 20px;
+}
+
+@keyframes move{
+    0% {
+        top: 100px;
+        left: 100px;
+        background-color: blue;
+        transform: rotate(180deg);
+        border-radius: 25%;
+        border: 10px solid red;
+    }
+
+    25% {
+        top: 100px;
+        left: 1200px;
+        background-color: red;
+        border-radius: 50%;
+        border: 10px dotted black;
+
+    }
+}

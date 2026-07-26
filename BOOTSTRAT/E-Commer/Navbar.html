@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg text-bg-secondary sticky-top shadow ">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand fs-1 fw-bold d-flex justify-content-center align-items-center" href="#">
+                <!-- img -->
+                <div class="car-logo">
+                    <img src="https://i.pinimg.com/vwebpf/1200x/61/f2/ab/61f2ab0c7ae497075152f3217853f86e.webp" alt="Car Logo"
+                        width="50" height="50" class="d-inline-block align-text-top rounded-circle ">
+
+                </div>
+                Car Brand 
+            </a>
+            <!-- Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>  
+            </button>
+
+            <!-- navbar menu -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Courses</a>
+                    </li>
+
+                    <!-- nav-item dropdown -->
+                    <li class="navbar-nav dropdown">
+
+                        <!-- services -->
+                        <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Web Design</a></li>
+                            <li><a class="dropdown-item" href="#">Development</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Marketing</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- form search -->
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-dark" type="submit">Search</button>
+                    </form>
+
+                    <!-- register/Login -->
+                    <div class="d-flex gap-2">
+                        <a href="#" class="btn btn-outline-dark">Login</a>
+                        <a href="#" class="btn btn-outline-dark bg-warning">Register</a>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- slide show -->
+    <div class="container mt-5">
+
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+
+        <!-- Indicators -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2"></button>
+        </div>
+
+        <!-- Slides -->
+        <div class="carousel-inner object-fit-cover">
+
+            <div class="carousel-item active">
+                <img src="https://i.pinimg.com/1200x/52/d9/ec/52d9ecaffca1f644cd35de7c09e690d9.jpg" class="d-block w-100 object-fit-cover" alt="Slide 1" height="500">
+            </div>
+
+            <div class="carousel-item">
+                <img src="https://i.pinimg.com/736x/8a/a1/cb/8aa1cb80e963b0d36b38abd99cac184d.jpg" class="d-block w-100 object-fit-cover" alt="Slide 2" height="500">
+            </div>
+
+            <div class="carousel-item">
+                <img src="https://i.pinimg.com/1200x/3c/ee/46/3cee46b8ae558c39aa8008c444c62a51.jpg" class="d-block w-100 object-fit-cover" alt="Slide 3" height="500">
+            </div>
+
+        </div>
+
+        <!-- Previous Button -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <!-- Next Button -->
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+
+    </div>
+
+    <!-- cards grid -->
+    <div class="container mt-5">
+    <div class="row g-4">
+
+        <div class="col-md-4">
+            <div class="card shadow">
+                <img src="https://i.pinimg.com/736x/13/9d/8d/139d8d5626128b80f243f87d7bbf18cb.jpg" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Mustang GT500</h5>
+                    <p class="card-text">$85,000</p>
+                    <a href="#" class="btn btn-primary">Buy Now</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow">
+                <img src="https://i.pinimg.com/736x/ae/e9/75/aee9754ed8255ea06a7c35bacce6eaa5.jpg" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Mustang GT500</h5>
+                    <p class="card-text">$90,000</p>
+                    <a href="#" class="btn btn-primary">Buy Now</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow">
+                <img src="https://i.pinimg.com/736x/29/b8/b4/29b8b42c0b4b4ea88349fb4306681dbe.jpg" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Mustang GT500</h5>
+                    <p class="card-text">$100,000</p>
+                    <a href="#" class="btn btn-primary">Buy Now</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- card grid -->
+    <div class="container mt-5">
+        <div class="row g-4">
+
+            <div class="col-md-4">
+                <div class="card shadow">
+                    <img src="https://i.pinimg.com/736x/9c/24/d2/9c24d226e1b47a85cee3df88e1b05ad8.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Mustang GT500</h5>
+                            <p class="card-text">$200,000</p>
+                            <a href="#" class="btn btn-primary">Buy Now</a>
+                        </div>
+                </div>
+           </div>
+
+        <div class="col-md-4">
+            <div class="card shadow">
+                <img src="https://i.pinimg.com/736x/d2/5c/a9/d25ca9f75a35933397a228a3575fddb1.jpg" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Mustang GT500</h5>
+                    <p class="card-text">$350,000</p>
+                    <a href="#" class="btn btn-primary">Buy Now</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow">
+                <img src="https://i.pinimg.com/736x/e6/4a/8e/e64a8e80061ddacb9f39cfefaa6d8667.jpg" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Mustang GT500</h5>
+                    <p class="card-text">$700,000</p>
+                    <a href="#" class="btn btn-primary">Buy Now</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container mt-5">
+    <div class="row g-4">
+
+        <div class="col-md-4">
+            <div class="card shadow">
+                <img src="https://i.pinimg.com/736x/a7/77/b3/a777b34213cde11b2d48b2f65cd0f8cc.jpg" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Mustang GT500</h5>
+                    <p class="card-text">$1,000,000</p>
+                    <a href="#" class="btn btn-primary">Buy Now</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow">
+                <img src="https://i.pinimg.com/736x/70/48/20/7048200b3330c66a47edb4b1325df254.jpg" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Mustang GT500</h5>
+                    <p class="card-text">$85,000</p>
+                    <a href="#" class="btn btn-primary">Buy Now</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow">
+                <img src="https://i.pinimg.com/736x/80/b7/ae/80b7ae443d71788fe7921bafa7922751.jpg" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Mustang GT500</h5>
+                    <p class="card-text">$99,000</p>
+                    <a href="#" class="btn btn-primary">Buy Now</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+</div>
+</div>
+
+</div>
+
+</div>
+<!-- Footer -->
+<footer class="bg-dark text-white pt-5 pb-3 mt-2">
+    <div class="container">
+        <div class="row">
+
+            <!-- Company -->
+            <div class="col-md-4 mb-4">
+                <h4>My Website</h4>
+                <p>
+                    Welcome to our website. We provide quality products and
+                    excellent customer service.
+                </p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="col-md-4 mb-4">
+                <h4>Quick Links</h4>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white text-decoration-none">Home</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">About</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Services</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact -->
+            <div class="col-md-4 mb-4">
+                <h4>Contact Us</h4>
+                <p>Email: info@example.com</p>
+                <p>Phone: +855 12 345 678</p>
+                <p>Address: Phnom Penh, Cambodia</p>
+            </div>
+
+        </div>
+
+        <hr class="border-light">
+
+        <div class="text-center">
+            <p class="mb-0">
+                &copy; 2026 My Website. All Rights Reserved.
+            </p>
+        </div>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

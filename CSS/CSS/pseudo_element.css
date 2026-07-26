@@ -1,0 +1,28 @@
+h1:hover::after{
+    content:"❤️";
+}
+
+h1:hover::before{
+    content:"😎";
+}
+
+.text::first-letter{
+    color: red;
+    font-size: 30px;
+}
+
+.text::first-line{
+    color: blue;
+}
+
+::selection{
+    background-color: yellow;
+    color: red;
+}
+
+input::placeholder{
+    color: blue;
+    font-size: 2opx;
+}
+
+

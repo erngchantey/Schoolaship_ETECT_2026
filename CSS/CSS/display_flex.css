@@ -1,0 +1,46 @@
+main{
+    width: 100%;
+    background-color: gray;
+}
+
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.m1{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.m2{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.m3{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.box1{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+
+    
+}
+
+.box2{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+}
+
+.box3{
+    width: 100px;
+    height: 100px;
+    background-color: greenyellow;
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body class="p-5">
+    <select id="language" class="">
+         <option value="HTML">HTML</option>
+         <OPtion value="CSS">CSS</OPtion>
+         <option value="JS">JS</option>
+         <option value="TS">TS</option>
+         <option value="VUE">VUE</option>
+         <option value="NUXT">NUXT</option>
+    </select>
+    <p id="domo"></p>
+    <script>
+        let language = document.getElementById('language')
+        let domo = document.getElementById('domo')
+        language.addEventListener('change', function(){
+            domo.textContent = " You selected: " + language.value;
+        })
+    </script>
+    
+</body>
+</html>

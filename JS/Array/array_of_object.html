@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+    <table class="table table-bordered table-striped table-hover text-center align-middle ">
+        <thead>
+            <tr class="fs-3 fw-bold">
+                <td class="bg-secondary py-3">Id</td?>
+                <td class="bg-secondary py-3">Title</td>
+                <td class="bg-secondary py-3">Price</td>
+                <td class="bg-secondary py-3">Qty</td>
+                <td class="bg-secondary py-3">Image</td>
+                <td class="bg-secondary py-3">Total</td>
+                <td class="bg-secondary py-3">Action</td>
+            </tr>
+        </thead>
+        <tbody class="fs-4 fw-bold py-3" id="domo">
+
+        </tbody>
+    </table>
+    <script>
+        let products = [{
+            id: '001',
+            title: "product 1",
+            price: 20,
+            qty: 10,
+            image: 'image.png',
+        },
+        {
+            id: '002',
+            title: "product 2",
+            price: 20,
+            qty: 10,
+            image: 'image copy.png',
+        },
+        {
+            id: '003',
+            title: "product 3",
+            price: 20,
+            qty: 10,
+            image: 'image copy 2.png',
+        },
+        {
+            id: '004',
+            title: "product 4",
+            price: 20,
+            qty: 10,
+            image: 'image copy 3.png',
+        },
+        {
+            id: '005',
+            title: "product 5",
+            price: 20,
+            qty: 10,
+            image: 'image copy 4.png',
+        },
+        {
+            id: '006',
+            title: "product 6",
+            price: 20,
+            qty: 10,
+            image: 'image copy 5.png',
+        },
+    ] 
+    
+    let domo = document.getElementById('domo');
+
+    for(item of products){
+        let text = `
+        <tr>
+            <td>${ item['id']}</td>
+            <td>${ item['title']}</td>
+            <td>${ item['price']}</td>
+            <td>${ item['qty']}</td>
+            <td>
+                <img src='img/${ item['image']}' width='200px' alt='${ item['title']}'>
+            </td>
+            <td>${ item['price'] * item['id']}</td>
+            <td>
+                <button class='btn btn-warning fs-4 fw-bold'>Edit</button>
+                <button class='btn btn-danger fs-4 fw-bold'>Delete</button>
+            </td>
+
+        </tr>
+        
+        
+        `;
+        domo.innerHTML +=text
+
+    }
+
+    </script>
+
+</body>
+</html>

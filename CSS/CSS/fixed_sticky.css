@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    width: 100%;
+    height: 100px;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: fixed; */
+    position: sticky;
+    margin-top: 0px;
+    top: 0;
+    z-index: 2;
+    
+
+}
+
+ul{
+    gap: 20px;
+    display: flex;
+    list-style-type: none;
+}
+
+li{
+   list-style-type: none;
+}
+
+main{
+    width: 100%;
+    height: 300vh;
+    background-color: gray;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    z-index: 3;
+}
+

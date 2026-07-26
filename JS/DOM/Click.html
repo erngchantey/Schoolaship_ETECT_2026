@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <p id="p">
+
+        <script>
+            let p = document.getElementById('p');
+            p.innerHTML='Hello <br> Erng Chantey';
+        </script>
+    </p >
+        
+    <hr> -->
+
+    <h1 id="h1"></h1>
+    <button id="btn">Click</button>
+
+    <script>
+        let h1 = document.getElementById('h1');
+        let btn = document.getElementById('btn');
+
+        btn.addEventListener('click', function () {
+            h1.innerHTML = "Event Click";
+        });
+    </script>
+</body>
+</html>

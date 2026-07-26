@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+    <script>
+        function non_return_non_param()
+        {
+            document.write("Function Non_return Non-parameter <hr>");
+        }
+        non_return_non_param()
+
+        function non_return_has_param(num1, num2)
+        {
+            document.write(
+
+            `
+            Function Non_return Has_parameter <br>
+            Num1 : ${num1} <br> Num2 : ${num2} <hr>
+            
+            `
+            );
+        }
+        non_return_has_param(10, 20)
+
+       <script>
+function return_non_param() {
+    let price = 100;
+    let qty = 30;
+    let total = price * qty;
+
+    let text = `
+        <div style="border:1px solid black; padding:10px;">
+            <h2>Product</h2>
+            <p>Price: ${price}</p>
+            <p>Quantity: ${qty}</p>
+            <p>Total: ${total}</p>
+        </div>
+    `;
+
+    document.getElementById("result").innerHTML = text;
+}
+
+return_non_param();
+</script>
+    </script>
+</body>
+
+</html>

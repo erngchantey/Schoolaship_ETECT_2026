@@ -1,0 +1,47 @@
+main{
+    width: 100%;
+    height: 50vh;
+    background-color: gray;
+    display: flex;
+}
+
+/* box left */
+.left{
+    width: 33.33%;
+    height: 50vh;
+    background-color: red;
+}
+
+/* box center */
+.center{
+    width: 33.33%;
+    height: 50vh;
+    background-color: blue;
+}
+
+/* box right */
+.right{
+    width: 33.33%;
+    height: 50vh;
+    background-color: greenyellow;
+}
+
+/* group */
+.left, .center, .right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* paren > child */
+.left h1{
+    color: white;
+}
+
+.center h1{
+    color: green;
+}
+
+.right h1{
+    color: red;
+}

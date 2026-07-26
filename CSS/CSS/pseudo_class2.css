@@ -1,0 +1,18 @@
+li:first-child{
+    color: aquamarine;
+}
+
+li:last-child{
+    color: palevioletred;
+}
+li:nth-child(odd){
+    color: greenyellow;
+}
+
+/* a:link{
+    color: brown;
+} */
+
+a:visited{
+    color: gold;
+}
