@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="SmartPOS dashboard and inventory management">
+  <title>SmartPOS | Dashboard</title>
+  <link rel="stylesheet" href="smartpos.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand"><span class="brand-mark">S</span><span>Smart<span>POS</span></span></div>
+      <p class="nav-label">Workspace</p>
+      <nav id="main-nav" aria-label="Main navigation">
+        <button class="nav-item active" data-view="dashboard"><span>▦</span> Dashboard</button>
+        <button class="nav-item" data-view="pos"><span>🛒</span> POS / New Sale <b class="nav-badge">0</b></button>
+        <button class="nav-item" data-view="products"><span>▣</span> Products</button>
+        <button class="nav-item" data-view="categories"><span>⌑</span> Categories</button>
+        <button class="nav-item" data-view="inventory"><span>◫</span> Inventory <b class="nav-badge warning">3</b></button>
+        <button class="nav-item" data-view="orders"><span>▤</span> Orders</button>
+        <button class="nav-item" data-view="customers"><span>♙</span> Customers</button>
+        <button class="nav-item" data-view="suppliers"><span>▱</span> Suppliers</button>
+        <button class="nav-item" data-view="employees"><span>♙</span> Employees</button>
+        <button class="nav-item" data-view="expenses"><span>◈</span> Expenses</button>
+        <button class="nav-item" data-view="reports"><span>◒</span> Reports</button>
+        <button class="nav-item" data-view="settings"><span>⚙</span> Settings</button>
+      </nav>
+      <div class="sidebar-footer">
+        <div class="store-switcher"><span class="avatar">S</span><span><strong>StyleHub Store</strong><small>Open · Register 01</small></span><span>⌄</span></div>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <button class="mobile-menu" id="mobile-menu" aria-label="Open navigation">☰</button>
+        <div class="breadcrumbs"><span id="breadcrumb-parent">Workspace</span><b>/</b><strong id="page-title">Dashboard</strong></div>
+        <div class="topbar-actions">
+          <button class="icon-button" title="Search" id="global-search">⌕</button>
+          <button class="icon-button notification" title="Notifications">♢<i></i></button>
+          <div class="user-menu"><span class="avatar">JD</span><span><strong>Jamie Doe</strong><small>Administrator</small></span><span>⌄</span></div>
+        </div>
+      </header>
+      <div id="app" class="page"></div>
+    </main>
+  </div>
+  <div id="toast" class="toast" role="status"></div>
+  <script src="smartpos.js"></script>
+</body>
+</html>
